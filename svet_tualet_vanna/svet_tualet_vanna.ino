@@ -6,10 +6,12 @@
 #define LED_TUALET 9
 #define LED_VANNA 8
 
+// автоматы
+byte svet_tualet = 0, svet_vanna = 0;
+// переменные для временных отсчетов
+unsigned long ms  = 0, svetTualetMs = 0, svetVannaMs = 0;
 
-byte svet = 0;
-unsigned long ms  = 0, svetms = 0;
-
+// пользовательские задержки 
 unsigned int vremya_zadergki_tualet = 10000;
 unsigned int vremya_zadergki_vanna = 10000;
 
